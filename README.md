@@ -1,10 +1,12 @@
 # Civic Brief · Bobingen and Augsburg
 
+[Open the prototype](https://bttlbmb.github.io/civic-brief/) · [Source repository](https://github.com/Bttlbmb/civic-brief)
+
 An English snapshot of local decisions and elected representatives. It opens on Bobingen, a city in Augsburg district. Switch to Augsburg for the independent city. Each story links to its source; each profile explains the local connection. Official neighbourhood names stay in German to match the city’s street directory.
 
 The Germany and EU sections include named votes from 12 November 2026. EU coverage explains the party-list system, features a locally connected MEP and links to the full German delegation. The disaster-response proposal remains under negotiation.
 
-**Snapshot date: 14 November 2026.** [Bobingen on a phone](screenshots/bobingen-mobile.png) · [Augsburg on a desktop](screenshots/augsburg-desktop.png) · [Augsburg district lookup](screenshots/augsburg-district.png) · [Federal profile and named vote](screenshots/augsburg-federal.png)
+**Snapshot date: 14 November 2026.** [Bobingen on a phone](screenshots/bobingen-mobile.png) · [Augsburg on a desktop](screenshots/augsburg-desktop.png) · [Augsburg district lookup](screenshots/augsburg-district.png) · [Federal vote](screenshots/augsburg-federal.png) · [EU vote](screenshots/desktop/07-bobingen-eu.png)
 
 ## Run locally
 
