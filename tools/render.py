@@ -124,8 +124,9 @@ def activities(level):
     for entry in level.get('activities', []):
         state = ''
         if entry.get('date'):
+            date_label = h(entry.get('date_label', 'Recorded'))
             state = (f'<p class="activity-state"><span class="tag gold">{h(entry["status"])}</span> '
-                     f'<time datetime="{h(entry["date"])}">{display_date(entry["date"])}</time></p>')
+                     f'<time datetime="{h(entry["date"])}">{date_label} {story_date(entry["date"])}</time></p>')
         local = ('<p class="local-context">' + h(entry['local_context']) + '</p>'
                  if entry.get('local_context') else '')
         evidence = ('<ul class="activity-links" aria-label="Sources">'
@@ -179,12 +180,13 @@ def details(city):
         compare = (f'<p class="compare"><a href="{representation(other)}#{target}">'
                    + h(label) + ' ' + icon('arr') + '</a></p>')
         blocks.append(f'''
-          <section class="profile" id="{key}" tabindex="-1">
-            <p class="kicker">{icon(key)} {h(level["level"])} · {h(level["institution"])}</p>
-            {scope}<h2>{heading}</h2><p>{h(level["connection"])}</p>{local_note}
+          <section class="profile" id="{key}" tabindex="-1" aria-labelledby="{key}-level {key}-name">
+            <p class="kicker" id="{key}-level">{icon(key)} {h(level["level"])} · {h(level["institution"])}</p>
+            {scope}<h2 id="{key}-name">{heading}</h2><p>{h(level["connection"])}</p>{local_note}
             {extra}{activities(level)}
             <p class="profile-sources-label">Profiles and records</p>
             <ul class="profile-links">{links}</ul>{compare}
+            <p class="mobile-level-return"><a href="#levels-menu">Choose another level</a></p>
           </section>''')
     return ''.join(blocks)
 
@@ -192,7 +194,7 @@ def level_menu(city):
     labels = ''.join(f'<a href="#{r["id"]}">{icon(r["id"])}{h(r["level"])}</a>'
                      for r in PLACES[city]['levels'])
     return f'''<details class="levelmenu"><summary>Choose a level of government</summary>
-      <nav aria-label="Levels of government">{labels}</nav></details>'''
+      <nav id="levels-menu" tabindex="-1" aria-label="Levels of government">{labels}</nav></details>'''
 
 def back(city):
     return f'<a class="back" href="{home(city)}">{icon("back")} Back to {h(PLACES[city]["name"])}</a>'
@@ -207,8 +209,8 @@ def notes(city):
             follow_up += (f'<a href="calendar/{h(item["calendar"]["file"])}" download>'
                           'Save the meeting to your calendar (.ics)</a>')
         evidence.append(f'''
-          <article class="evidence" id="{h(item["id"])}" tabindex="-1">
-            <h3>{h(item["title"])}</h3>
+          <article class="evidence" id="{h(item["id"])}" tabindex="-1" aria-labelledby="{h(item["id"])}-title">
+            <h3 id="{h(item["id"])}-title">{h(item["title"])}</h3>
             <p class="evidencedate">Published: {display_date(item["date"])} · {h(item["status"])}</p>
             <p>{h(item["evidence"])}</p>
             <div class="evidencelinks">{source(item["source"], decorated=True)}
@@ -222,7 +224,8 @@ def notes(city):
       <h2>Behind the stories in {h(PLACES[city]["name"])}</h2>{''.join(evidence)}
       <h2>How do we choose stories?</h2>
       <p>We select a few local developments and put the most recent notice first.
-        Each date tells you when the source published its update. A meeting or decision can have a different date.</p>
+        On the overviews, dates tell you when the source published its update.
+        Meeting and decision dates appear in the text. Parliamentary votes use the date of the vote.</p>
       <h2>What counts as a decision?</h2>
       <p>An agenda tells you what a committee plans to discuss. It does not tell you what the committee decided.
         We report an individual vote only when the minutes or a roll call name the voter.</p>

@@ -711,6 +711,9 @@ h1,h2,h3 {
 .levelmenu {
   display:none;
 }
+.mobile-level-return {
+  display:none;
+}
 .profile-links {
   margin:11px 0 0;
 }
@@ -725,6 +728,16 @@ h1,h2,h3 {
   flex-shrink:0;
 }
 @media(max-width:680px) {
+  .mobile-level-return {
+    display:block;
+  }
+  .mobile-level-return a {
+    display:inline-block;
+    min-height:44px;
+    padding-block:9px;
+    font-size:14px;
+    font-weight:650;
+  }
   .levelmenu {
     display:block;
     margin:8px 0 16px;
@@ -896,7 +909,7 @@ main,footer {
   }
 }
 @media print {
-  .mapcaption,.mobilejump,.levelmenu,#district-controls,.source .out {
+  .mapcaption,.mobilejump,.levelmenu,.mobile-level-return,#district-controls,.source .out {
     display:none!important;
   }
   .mast {

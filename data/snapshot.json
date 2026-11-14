@@ -327,7 +327,8 @@
                   "source_record": "MTG-PL-2026-11-12-DEC-200101",
                   "voter_id": "1917"
                 }
-              ]
+              ],
+              "date_label": "Vote on"
             }
           ],
           "members": [
@@ -623,7 +624,8 @@
                   "source_record": "MTG-PL-2026-11-12-DEC-200101",
                   "voter_id": "1917"
                 }
-              ]
+              ],
+              "date_label": "Vote on"
             }
           ],
           "members": [

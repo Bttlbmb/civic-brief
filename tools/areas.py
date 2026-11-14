@@ -28,8 +28,8 @@ def area_block():
                     f'<td><a href="#members-{area}" aria-label="{direction} representatives for {name}">'
                     f'{direction}</a></td></tr>')
     return f'''
-      <div class="finder" id="constituency" tabindex="-1">
-        <h3>Who represents my part of Augsburg?</h3>
+      <div class="finder" id="constituency" tabindex="-1" role="region" aria-labelledby="constituency-title">
+        <h3 id="constituency-title">Who represents my part of Augsburg?</h3>
         <p>The Bavarian Parliament and the Swabian Regional Assembly use the same two constituencies here.
           Federal elections use different boundaries.</p>
         <div id="district-controls" hidden>

@@ -35,6 +35,15 @@ async function main() {
     assert.ok(position.y >= 0 && position.y + position.height <= 844);
     await mobileLink.click();
     assert.match(page.url(), /bobingen-representatives\.html$/);
+    await page.getByText('Choose a level of government').click();
+    await page.getByRole('navigation', { name: 'Levels of government' })
+      .getByRole('link', { name: 'EU', exact: true }).click();
+    await page.locator('#europe .mobile-level-return a').click();
+    assert.equal(await page.locator(':focus').getAttribute('id'), 'levels-menu');
+    assert.ok(await page.getByRole('navigation', { name: 'Levels of government' }).isVisible());
+    await page.getByRole('navigation', { name: 'Levels of government' })
+      .getByRole('link', { name: 'Germany', exact: true }).click();
+    assert.match(page.url(), /#federal$/);
     await page.getByRole('link', { name: 'Augsburg', exact: true }).click();
     assert.match(page.url(), /augsburg-representatives\.html$/);
     assert.equal(await page.locator('#district').count(), 0);
@@ -69,7 +78,9 @@ async function main() {
     }
     assert.deepEqual(failed, []);
 
-    const noJS = await browser.newContext({ javaScriptEnabled: false });
+    const noJS = await browser.newContext({
+      javaScriptEnabled: false, viewport: { width: 320, height: 844 }
+    });
     const plain = await noJS.newPage();
     await plain.goto(new URL('augsburg-representatives.html#constituency', base).href);
     assert.equal(await plain.locator('#district-controls').isVisible(), false);
@@ -81,6 +92,12 @@ async function main() {
     assert.match(await plain.locator(':target').innerText(), /Leo Dietz/);
     await lookupTable.getByRole('row', { name: /12 Siebenbrunn/ }).getByRole('link').click();
     assert.match(await plain.locator(':target').innerText(), /Erwin Gerblinger/);
+    await plain.goto(new URL('bobingen-representatives.html#europe', base).href);
+    await plain.locator('#europe .mobile-level-return a').click();
+    assert.equal(await plain.locator(':focus').getAttribute('id'), 'levels-menu');
+    await plain.getByRole('navigation', { name: 'Levels of government' })
+      .getByRole('link', { name: 'Bavaria', exact: true }).click();
+    assert.match(await plain.locator(':target').innerText(), /Carolina Trautner/);
     console.log('City switching, subpath, keyboard, districts, mobile widths and JavaScript-free access: OK');
   } finally {
     await browser.close();

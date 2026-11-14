@@ -14,6 +14,7 @@ class Page(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.ids = set()
         self.refs = []
+        self.aria_refs = []
         self.h1 = 0
         self.lang = None
         self.feed(path.read_text(encoding='utf-8'))
@@ -28,6 +29,8 @@ class Page(HTMLParser):
         if tag == 'h1':
             self.h1 += 1
         self.refs.extend(a[k] for k in ('src', 'href') if k in a)
+        for key in ('aria-labelledby', 'aria-describedby'):
+            self.aria_refs.extend(a.get(key, '').split())
         if tag in ('script', 'img', 'link') and ('src' in a or 'href' in a):
             assert not urlsplit(a.get('src', a.get('href', ''))).netloc, 'External asset'
 
@@ -71,6 +74,8 @@ def check_output():
     assert {p.name for p in pages} == expected_pages, 'Unexpected or missing published page'
     for path, page in pages.items():
         assert page.lang == 'en' and page.h1 == 1, path.name
+        for ref in page.aria_refs:
+            assert ref in page.ids, (path.name, 'Missing accessible-name target', ref)
         for ref in page.refs:
             url = urlsplit(ref)
             if url.scheme:
