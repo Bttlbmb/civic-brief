@@ -1,0 +1,231 @@
+{
+  "constituency_source": "https://www.gesetze-bayern.de/Content/Document/BayLWG-ANL_1?view=Print",
+  "district_source": "https://www.augsburg.de/fileadmin/user_upload/buergerservice_rathaus/rathaus/statisiken_und_geodaten/statistiken/strukturatlas/Strukturatlas_aktuell.pdf",
+  "street_directory": "https://www.augsburg.de/fileadmin/user_upload/buergerservice_rathaus/rathaus/statisiken_und_geodaten/statistiken/gebietseinteilung/STRV_Gebiete_aktuell.pdf",
+  "constituencies": {
+    "east": {
+      "name": "Augsburg City East",
+      "number": 701,
+      "state_member": "Andreas Jäckel (CSU)",
+      "regional_member": "Erwin Gerblinger (CSU)"
+    },
+    "west": {
+      "name": "Augsburg City West",
+      "number": 702,
+      "state_member": "Leo Dietz (CSU)",
+      "regional_member": "Martin Sailer (CSU)"
+    }
+  },
+  "districts": [
+    {
+      "number": "01",
+      "name": "Lechviertel, östliches Ulrichsviertel",
+      "constituency": "east"
+    },
+    {
+      "number": "02",
+      "name": "Innenstadt, St. Ulrich–Dom",
+      "constituency": "east"
+    },
+    {
+      "number": "03",
+      "name": "Bahnhofs- und Bismarckviertel",
+      "constituency": "east"
+    },
+    {
+      "number": "04",
+      "name": "Georgs- und Kreuzviertel",
+      "constituency": "east"
+    },
+    {
+      "number": "05",
+      "name": "Stadtjägerviertel",
+      "constituency": "east"
+    },
+    {
+      "number": "06",
+      "name": "Rechts der Wertach",
+      "constituency": "west"
+    },
+    {
+      "number": "07",
+      "name": "Bleich und Pfärrle",
+      "constituency": "east"
+    },
+    {
+      "number": "08",
+      "name": "Jakobervorstadt-Nord",
+      "constituency": "east"
+    },
+    {
+      "number": "09",
+      "name": "Jakobervorstadt-Süd",
+      "constituency": "east"
+    },
+    {
+      "number": "10",
+      "name": "Am Schäfflerbach",
+      "constituency": "east"
+    },
+    {
+      "number": "11",
+      "name": "Spickel",
+      "constituency": "east"
+    },
+    {
+      "number": "12",
+      "name": "Siebenbrunn",
+      "constituency": "east"
+    },
+    {
+      "number": "13",
+      "name": "Hochfeld",
+      "constituency": "west"
+    },
+    {
+      "number": "14",
+      "name": "Antonsviertel",
+      "constituency": "west"
+    },
+    {
+      "number": "15",
+      "name": "Rosenau- und Thelottviertel",
+      "constituency": "west"
+    },
+    {
+      "number": "16",
+      "name": "Pfersee-Süd",
+      "constituency": "west"
+    },
+    {
+      "number": "17",
+      "name": "Pfersee-Nord",
+      "constituency": "west"
+    },
+    {
+      "number": "18",
+      "name": "Kriegshaber",
+      "constituency": "west"
+    },
+    {
+      "number": "19",
+      "name": "Links der Wertach-Süd",
+      "constituency": "west"
+    },
+    {
+      "number": "20",
+      "name": "Links der Wertach-Nord",
+      "constituency": "west"
+    },
+    {
+      "number": "21",
+      "name": "Oberhausen-Süd",
+      "constituency": "west"
+    },
+    {
+      "number": "22",
+      "name": "Oberhausen-Nord",
+      "constituency": "west"
+    },
+    {
+      "number": "23",
+      "name": "Bärenkeller",
+      "constituency": "west"
+    },
+    {
+      "number": "24",
+      "name": "Hochzoll-Nord",
+      "constituency": "east"
+    },
+    {
+      "number": "25",
+      "name": "Lechhausen-Süd",
+      "constituency": "east"
+    },
+    {
+      "number": "26",
+      "name": "Lechhausen-Ost",
+      "constituency": "east"
+    },
+    {
+      "number": "27",
+      "name": "Lechhausen-West",
+      "constituency": "east"
+    },
+    {
+      "number": "28",
+      "name": "Firnhaberau",
+      "constituency": "east"
+    },
+    {
+      "number": "29",
+      "name": "Hammerschmiede",
+      "constituency": "east"
+    },
+    {
+      "number": "30",
+      "name": "Wolfram- und Herrenbachviertel",
+      "constituency": "east"
+    },
+    {
+      "number": "31",
+      "name": "Hochzoll-Süd",
+      "constituency": "east"
+    },
+    {
+      "number": "32",
+      "name": "Universitätsviertel",
+      "constituency": "east"
+    },
+    {
+      "number": "33",
+      "name": "Haunstetten-Nord",
+      "constituency": "east"
+    },
+    {
+      "number": "34",
+      "name": "Haunstetten-West",
+      "constituency": "east"
+    },
+    {
+      "number": "35",
+      "name": "Haunstetten-Ost",
+      "constituency": "east"
+    },
+    {
+      "number": "36",
+      "name": "Haunstetten-Süd",
+      "constituency": "east"
+    },
+    {
+      "number": "37",
+      "name": "Göggingen-Nordwest",
+      "constituency": "west"
+    },
+    {
+      "number": "38",
+      "name": "Göggingen-Nordost",
+      "constituency": "west"
+    },
+    {
+      "number": "39",
+      "name": "Göggingen-Ost",
+      "constituency": "west"
+    },
+    {
+      "number": "40",
+      "name": "Göggingen-Süd",
+      "constituency": "west"
+    },
+    {
+      "number": "41",
+      "name": "Inningen",
+      "constituency": "west"
+    },
+    {
+      "number": "42",
+      "name": "Bergheim",
+      "constituency": "west"
+    }
+  ]
+}

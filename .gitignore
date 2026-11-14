@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Historical screenshot links from the review, not part of the English release.
+vorschau/

@@ -1,0 +1,639 @@
+{
+  "as_of": "2026-11-14",
+  "places": {
+    "bobingen": {
+      "name": "Bobingen",
+      "place_type": "City in Augsburg district",
+      "updates": [
+        {
+          "date": "2026-11-11",
+          "status": "On the agenda",
+          "title": "Mayor Ammer calls solar panel meeting",
+          "text": "Which city buildings should get solar panels? Mayor Michael Ammer has called a public meeting for 17 November, 5 pm at town hall.",
+          "source": {
+            "label": "City of Bobingen · Agenda (PDF)",
+            "url": "https://www.stadt-bobingen.de/_Resources/Persistent/3/a/2/f/3a2fa985a454da5ac61719220e99b7d6868934a4/amtliche%20BA%2017.11.26.pdf"
+          },
+          "level_id": "city",
+          "evidence": "Item 2 asks the building, planning and environment committee to choose sites for solar panels to be installed by EVB, the local energy company. No site is listed as approved. The public meeting is in the council chamber at Rathausplatz 1. Minutes appear after the committee approves them.",
+          "follow_up": {
+            "label": "Bobingen meeting calendar and minutes",
+            "url": "https://www.stadt-bobingen.de/rathaus-service/kommunalpolitik/sitzungstermine"
+          },
+          "id": "solar-panels",
+          "calendar": {
+            "file": "bobingen-public-meeting-2026-11-17.ics",
+            "start_local": "2026-11-17T17:00:00+01:00",
+            "summary": "Bobingen public committee meeting: solar panels on city buildings",
+            "location": "Council chamber, Rathausplatz 1, 86399 Bobingen, Germany",
+            "description": "Public meeting of the building, planning and environment committee. Item 2 concerns proposed sites for solar panels. The official agenda gives no end time."
+          }
+        },
+        {
+          "date": "2026-10-28",
+          "status": "In force",
+          "title": "Augsburg district tightens spending controls",
+          "text": "District offices must check spending more closely, including on services for Bobingen. District head Martin Sailer cited pressure on the budget. The order applies only to the district’s spending.",
+          "source": {
+            "label": "Augsburg district · Budget announcement",
+            "url": "https://www.landkreis-augsburg.de/news/detail/detail/News/landkreis-augsburg-verhaengt-haushaltssperre-fuer-2026/"
+          },
+          "level_id": "district",
+          "evidence": "The district imposed the controls for the 2026 budget year. It expects extra costs for social services and youth services.",
+          "id": "district-budget"
+        },
+        {
+          "date": "2026-10-27",
+          "status": "Completed",
+          "title": "Bobingen reopens Schnitterstraße",
+          "text": "The city officially reopened Schnitterstraße on 22 October after renewing 280 metres of road. Owners of properties along the street will not be charged for the work.",
+          "source": {
+            "label": "City of Bobingen · Road reopening",
+            "url": "https://www.stadt-bobingen.de/rathaus-service/aktuelles/schnitterstrasse-offiziell-fuer-den-verkehr-freigegeben"
+          },
+          "level_id": "city",
+          "evidence": "The city says work finished in September. It held the official reopening on 22 October and published its report on 27 October.",
+          "id": "schnitterstrasse"
+        }
+      ],
+      "levels": [
+        {
+          "id": "city",
+          "level": "City",
+          "institution": "Mayor and city council",
+          "representatives": "Michael Ammer · Freie Bürger-Union",
+          "connection": "Bobingen voters elected Michael Ammer as mayor. He runs the city administration and chairs the council. Alongside him, 24 elected councillors decide on matters such as city buildings and roads.",
+          "sources": [
+            {
+              "label": "City of Bobingen: mayor and council seats",
+              "url": "https://www.stadt-bobingen.de/rathaus-service/kommunalpolitik"
+            },
+            {
+              "label": "Bobinger Stadtbote: how the council chose its deputies",
+              "url": "https://ol.wittich.de/titel/2350/ausgabe/7/2026/artikel/00000000000053721279-OL-2350-2026-26-7-0"
+            },
+            {
+              "label": "Final result of the 2026 mayoral election",
+              "url": "https://kommunalwahl2026.bayern.de/personenwahl/stichwahl/772125.html"
+            },
+            {
+              "label": "Members of Bobingen City Council",
+              "url": "https://www.stadt-bobingen.de/rathaus-service/kommunalpolitik/mandatstraeger"
+            },
+            {
+              "label": "Councillors elected in March 2026",
+              "url": "https://stadt-bobingen.de/wahlen/stadtrat/ergebnisse.html"
+            },
+            {
+              "label": "BayernPortal: Bobingen is in Augsburg district",
+              "url": "https://www.bayernportal.de/dokumente/behoerde/48997907451"
+            }
+          ],
+          "more_context": "The council chose two of its members as deputies. Herwig Leiter (CSU) is second mayor and Dr. Armin Bergmann (SPD) is third mayor."
+        },
+        {
+          "id": "district",
+          "level": "District",
+          "institution": "Augsburg district",
+          "representatives": "Martin Sailer · CSU",
+          "connection": "Bobingen is part of Augsburg district. Its voters help elect the district head and district council. Martin Sailer runs the district administration and chairs the council. One district job is issuing driving licences.",
+          "sources": [
+            {
+              "label": "District office: Martin Sailer",
+              "url": "https://www.landkreis-augsburg.de/landrat-martin-sailer/"
+            },
+            {
+              "label": "Augsburg district: all district councillors",
+              "url": "https://buergerinfo.landkreis-augsburg.de/kp0040.asp?__kgrnr=50"
+            },
+            {
+              "label": "District council: Rainer Naumann of Bobingen",
+              "url": "https://buergerinfo.landkreis-augsburg.de/pe0051.asp?__kpenr=20323"
+            },
+            {
+              "label": "Who was elected to the district council in 2026? (PDF)",
+              "url": "https://www.landkreis-augsburg.de/fileadmin/user_upload/Kommunales/Bekanntmachung_abschliessendes_Ergebnis_Kreistagswahl.pdf"
+            },
+            {
+              "label": "Augsburg district: driving licence office",
+              "url": "https://www.landkreis-augsburg.de/landrat-landratsamt/landratsamt/sicherheit-und-ordnung-kommunales-und-verbraucherschutz/auto-verkehr/fahrerlaubnisbehoerde/"
+            }
+          ],
+          "more_context": "Rainer Naumann (Freie Wähler) is a district councillor from Bobingen. Voters across the whole district elect him and his fellow councillors."
+        },
+        {
+          "id": "region",
+          "level": "Swabia",
+          "institution": "Regional assembly",
+          "representatives": "Klaus Förster · CSU",
+          "connection": "Bobingen is in the Augsburg-Land-Süd constituency (705). Its voters directly elected Klaus Förster to the Swabian regional assembly. The region provides services including support for people with disabilities.",
+          "sources": [
+            {
+              "label": "Directly elected assembly members (PDF)",
+              "url": "https://www.regierung-schwaben.bayern.de/mam/presse/anlagen_zur_pm_ergebnis_sitzung_endg._ergebnis_2023.pdf#page=32"
+            },
+            {
+              "label": "Swabia: assembly members and regional services (PDF)",
+              "url": "https://www.bezirk-schwaben.de/media/16780/2026-03-26_broschuere_bezirk_in_schwaben_web.pdf"
+            }
+          ]
+        },
+        {
+          "id": "state",
+          "level": "Bavaria",
+          "institution": "Bavarian state parliament",
+          "representatives": "Carolina Trautner · CSU",
+          "connection": "Bobingen is in the Augsburg-Land-Süd constituency (705). Its voters directly elected Carolina Trautner to the state parliament, where she votes on laws for all of Bavaria.",
+          "sources": [
+            {
+              "label": "State parliament: Carolina Trautner",
+              "url": "https://www.bayern.landtag.de/abgeordnete/abgeordnete-von-a-z/profil/carolina-trautner/"
+            },
+            {
+              "label": "2023 Bavarian state election results",
+              "url": "https://www.landtagswahl2023.bayern.de/stimmkreisuebersicht.html"
+            },
+            {
+              "label": "Which places are in this constituency?",
+              "url": "https://www.gesetze-bayern.de/Content/Document/BayLWG-ANL_1?view=Print"
+            },
+            {
+              "label": "Find other members: select Swabia on the parliament map",
+              "url": "https://www.bayern.landtag.de/abgeordnetenkarte/"
+            }
+          ],
+          "activities": [
+            {
+              "title": "Funding for the village hall · March and April 2026",
+              "text": "Carolina Trautner and other members asked for €625,000 for the Waldberg-Kreuzanger village hall. On 23 April, the state parliament approved a budget that included the project. The budget does not say whether the money has been paid.",
+              "sources": [
+                {
+                  "label": "Motion of 4 March (PDF, p. 1)",
+                  "url": "https://www.bayern.landtag.de/www/ElanTextAblage_WP19/Drucksachen/Basisdrucksachen/0000008500/0000008614.pdf#page=1"
+                },
+                {
+                  "label": "State parliament decision of 23 April (PDF)",
+                  "url": "https://www.bayern.landtag.de/www/ElanTextAblage_WP19/Drucksachen/Folgedrucksachen/0000008000/0000008350.pdf#page=1"
+                },
+                {
+                  "label": "Project in the approved budget (PDF, p. 43)",
+                  "url": "https://www.stmfh.bayern.de/haushalt/20262027/Epl08.pdf#page=43"
+                }
+              ]
+            }
+          ],
+          "more_context": "Voters also elected members through party lists covering the whole of Swabia. The state parliament’s map shows who they are."
+        },
+        {
+          "id": "federal",
+          "level": "Germany",
+          "institution": "German Bundestag",
+          "connection": "Bobingen is in the Augsburg-Land constituency (252). Its voters elected Hansjörg Durz to the Bundestag in 2025. Heike Heubach also stood here. She won her seat through the SPD’s party list for Bavaria.",
+          "sources": [
+            {
+              "label": "Bundestag: Hansjörg Durz",
+              "url": "https://www.bundestag.de/abgeordnete/biografien/D/durz_hansjoerg-1048536"
+            },
+            {
+              "label": "Bundestag: Heike Heubach",
+              "url": "https://www.bundestag.de/abgeordnete/biografien/H/heubach_heike-1044962"
+            },
+            {
+              "label": "Federal Returning Officer: places in this constituency (English)",
+              "url": "https://www.bundeswahlleiterin.de/en/bundestagswahlen/2025/wahlkreiseinteilung/bund-99/land-9/wahlkreis-252.html",
+              "language": "en"
+            },
+            {
+              "label": "Bavaria: members elected by constituency and by party list (English)",
+              "url": "https://www.bundeswahlleiterin.de/en/bundestagswahlen/2025/gewaehlte/bund-99/land-9.html",
+              "language": "en"
+            }
+          ],
+          "activities": [
+            {
+              "title": "Vote on childcare · 12 November 2026",
+              "text": "The Bundestag passed a bill to improve early learning in childcare centres. The vote did not award funding to any specific centre in Bobingen.",
+              "sources": [
+                {
+                  "label": "Bundestag: result of the vote",
+                  "url": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=1038"
+                },
+                {
+                  "label": "How each member voted (XLSX)",
+                  "url": "https://www.bundestag.de/resource/blob/1233020/20261112_1.xlsx"
+                }
+              ],
+              "votes": [
+                {
+                  "name": "Hansjörg Durz",
+                  "vote": "Yes",
+                  "source_row": 43
+                },
+                {
+                  "name": "Heike Heubach",
+                  "vote": "Yes",
+                  "source_row": 395
+                }
+              ]
+            },
+            {
+              "title": "Speech on fibre broadband · 9 October 2026",
+              "text": "Hansjörg Durz called for simpler rules for building fibre broadband and mobile networks. This was the Bundestag’s first debate on the bill.",
+              "sources": [
+                {
+                  "label": "Watch the speech in the Bundestag archive",
+                  "url": "https://www.bundestag.de/mediathek/video?videoid=7665671"
+                },
+                {
+                  "label": "Read the Bundestag’s account of the debate",
+                  "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw41-de-telekommunikationsnetze-1217568"
+                }
+              ]
+            }
+          ],
+          "members": [
+            {
+              "name": "Hansjörg Durz",
+              "party": "CSU"
+            },
+            {
+              "name": "Heike Heubach",
+              "party": "SPD"
+            }
+          ]
+        },
+        {
+          "id": "europe",
+          "level": "EU",
+          "institution": "European Parliament",
+          "connection": "Bobingen has no separate seat in European elections. Residents vote for party lists. Markus Ferber won a seat on the CSU’s Bavarian list in 2024. He served on Bobingen City Council from 1990 to 1999.",
+          "sources": [
+            {
+              "label": "European Parliament: Markus Ferber",
+              "url": "https://www.europarl.europa.eu/meps/en/1917/MARKUS_FERBER/home",
+              "language": "en"
+            },
+            {
+              "label": "Find current MEPs elected in Germany (English)",
+              "url": "https://www.europarl.europa.eu/meps/en/search/advanced?countryCode=DE",
+              "language": "en"
+            },
+            {
+              "label": "All candidates elected in Germany in 2024 (English)",
+              "url": "https://www.bundeswahlleiterin.de/en/europawahlen/2024/gewaehlte/bund-99.html",
+              "language": "en"
+            },
+            {
+              "label": "European Parliament: Ferber’s local ties (PDF, p. 38)",
+              "url": "https://europanetzwerk.hessen.de/sites/europanetzwerk.hessen.de/files/2025-07/europaeisches_parlament_buergerhandbuch_10_wahlperiode-qa0124028den.pdf#page=38"
+            },
+            {
+              "label": "How European elections work in Germany (English)",
+              "url": "https://www.bundeswahlleiterin.de/en/europawahlen/2024/informationen-waehler/wahlsystem.html",
+              "language": "en"
+            }
+          ],
+          "more_context": "Ferber’s party is the CSU. In the European Parliament, he sits with the European People’s Party group (EPP).",
+          "scope": "Germany elects 96 MEPs through party lists. In Bavaria, residents choose a Bavarian or nationwide party list. The profile below features one MEP with local ties.",
+          "profile_label": "A locally connected MEP",
+          "activities": [
+            {
+              "title": "Parliament agrees changes to EU disaster-response rules",
+              "date": "2026-11-12",
+              "status": "Negotiating position",
+              "text": "The European Parliament agreed changes to proposed rules for disaster and health emergency support. It sent the file back for talks with the Council, where national governments are represented. Final EU rules still need agreement.",
+              "local_context": "The Holzhausen flood basin helped protect Bobingen in June 2024. This EU vote does not assign money to projects in Bobingen.",
+              "sources": [
+                {
+                  "label": "European Parliament: decision and next steps (English)",
+                  "url": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025/0223(COD)",
+                  "language": "en"
+                },
+                {
+                  "label": "Parliament’s named vote (JSON)",
+                  "url": "https://data.europarl.europa.eu/api/v2/events/MTG-PL-2026-11-12-DEC-200101?format=application%2Fld%2Bjson",
+                  "language": "en"
+                },
+                {
+                  "label": "Bavarian water authority: local flood protection (PDF, p. 17)",
+                  "url": "https://www.wwa-don.bayern.de/themen/hochwasser/hochwasserereignisse/doc/hochwasserbericht_2024.pdf#page=17"
+                }
+              ],
+              "vote_caption": "Vote on the draft legislative act",
+              "votes": [
+                {
+                  "name": "Markus Ferber",
+                  "vote": "Yes",
+                  "source_record": "MTG-PL-2026-11-12-DEC-200101",
+                  "voter_id": "1917"
+                }
+              ]
+            }
+          ],
+          "members": [
+            {
+              "name": "Markus Ferber",
+              "party": "CSU"
+            }
+          ]
+        }
+      ]
+    },
+    "augsburg": {
+      "name": "Augsburg",
+      "place_type": "Independent city · outside Augsburg district",
+      "updates": [
+        {
+          "date": "2026-11-13",
+          "status": "Permit granted",
+          "title": "City grants cooling water permit",
+          "text": "On 4 November, the environment office allowed Everllence to take water from three streams. View the plans online or at the office from 20 November to 3 December.",
+          "source": {
+            "label": "Augsburg city gazette · p. 302 (PDF)",
+            "url": "https://www.augsburg.de/fileadmin/user_upload/footer/amtsblatt/2026/Amtsblatt-2026-46_vom-13-11-2026_.pdf#page=4"
+          },
+          "level_id": "city",
+          "evidence": "The permit covers groundwater and three streams: Malvasierbach, Stadtbach and Proviantbach. The 13 November gazette (page 302) gives the inspection dates: 20 November to 3 December. Read the decision and plans online or at the environment office, Schießgrabenstraße 4.",
+          "follow_up": {
+            "label": "Environment office: documents open for public inspection",
+            "url": "https://www.augsburg.de/umwelt-soziales/umwelt/bekanntmachungen-umweltamt"
+          },
+          "id": "cooling-water"
+        },
+        {
+          "date": "2026-11-09",
+          "status": "Open for comment",
+          "title": "Augsburg asks what should change in the city",
+          "text": "The city is collecting ideas for its future until 29 November. Have your say online or on paper at the public information office on Rathausplatz. The city council will decide later.",
+          "source": {
+            "label": "City of Augsburg · Invitation to take part",
+            "url": "https://www.augsburg.de/aktuelles-aus-der-stadt/detail/mach-mit-augsburg-zukunftsleitlinien-werden-aktualisiert"
+          },
+          "level_id": "city",
+          "evidence": "You can submit comments until 29 November. Paper forms are available at the public information office on Rathausplatz. The city expects the council to make its final decision in July 2027.",
+          "follow_up": {
+            "label": "Fill in the city’s online questionnaire",
+            "url": "https://machmit.augsburg.de/zukunftsleitlinien"
+          },
+          "id": "city-consultation"
+        },
+        {
+          "date": "2026-11-03",
+          "status": "Approved",
+          "title": "Council funds more secondary school places",
+          "text": "In October, Augsburg City Council approved up to €2.375 million towards expanding Bischof-Ulrich-Realschule. The expansion would create 75 to 98 extra places for pupils who live in Augsburg.",
+          "source": {
+            "label": "City of Augsburg · Report on the council decision",
+            "url": "https://www.augsburg.de/aktuelles-aus-der-stadt/detail/rund-100-zusaetzliche-realschulplaetze-fuer-augsburg"
+          },
+          "level_id": "city",
+          "evidence": "The council approved the grant. The city says the new intake could start in the 2027/28 school year. Its report does not name individual councillors’ votes.",
+          "id": "school-places"
+        }
+      ],
+      "levels": [
+        {
+          "id": "city",
+          "level": "City",
+          "institution": "Mayor and city council",
+          "representatives": "Dr. Florian Freund · SPD",
+          "connection": "Augsburg voters elected Florian Freund as mayor in 2026. He runs the city administration and chairs the council, which has 60 other elected members. Augsburg is an independent city. It runs its own driving licence office. In Bobingen, that is a district responsibility.",
+          "sources": [
+            {
+              "label": "City of Augsburg: 2026 local elections",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/rathaus/wahlen-abstimmungen/kommunalwahl-2026"
+            },
+            {
+              "label": "City of Augsburg: election of the deputy mayors",
+              "url": "https://www.augsburg.de/aktuelles-aus-der-stadt/detail/live-ab-11-uhr-konstituierende-sitzung-des-neuen-stadtrats"
+            },
+            {
+              "label": "City magazine: meet the councillors (PDF, from p. 14)",
+              "url": "https://www5.azol.de/online-verlag/bk/catalogs/Augsburg_direkt_09_2026/pdf/complete.pdf#page=14"
+            },
+            {
+              "label": "What the city council does",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/stadtrat-und-verwaltung/stadtpolitik/"
+            },
+            {
+              "label": "BayernPortal: Augsburg is an independent city",
+              "url": "https://www.bayernportal.de/dokumente/behoerde/24442640389"
+            },
+            {
+              "label": "City of Augsburg: its own driving licence office",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/aemter-behoerden/staedtische-dienststellen/b/buergeramt/buergerbueros/fahrerlaubnisbehoerde/fuehrerscheinstelle"
+            }
+          ],
+          "activities": [
+            {
+              "title": "Interview · Published in October 2026",
+              "text": "Young reporters from Logi-Fox asked Florian Freund about his work as mayor. The children suggested more playgrounds and more school holiday activities for teenagers.",
+              "sources": [
+                {
+                  "label": "Read the Logi-Fox interview (PDF, from p. 18)",
+                  "url": "https://www.logifox.de/ausgabe-27-2026/#page=18"
+                },
+                {
+                  "label": "City announcement about this issue of Logi-Fox",
+                  "url": "https://www.augsburg.de/aktuelles-aus-der-stadt/detail/die-neue-logi-fox-ist-da-1"
+                }
+              ]
+            }
+          ],
+          "more_context": "The council chose two of its members as deputies. Dirk Wurm (SPD) is second mayor and Bernd Zitzelsberger (CSU) is third mayor."
+        },
+        {
+          "id": "region",
+          "level": "Swabia",
+          "institution": "Regional assembly",
+          "representatives": "Erwin Gerblinger and Martin Sailer · both CSU",
+          "connection": "Augsburg belongs to the region of Swabia. Voters in Augsburg-Stadt-Ost (701) elected Erwin Gerblinger to its assembly. Those in Augsburg-Stadt-West (702) elected Martin Sailer. The region provides services including support for people with disabilities.",
+          "sources": [
+            {
+              "label": "Directly elected assembly members (PDF)",
+              "url": "https://www.regierung-schwaben.bayern.de/mam/presse/anlagen_zur_pm_ergebnis_sitzung_endg._ergebnis_2023.pdf#page=32"
+            },
+            {
+              "label": "Swabia: assembly members and regional services (PDF)",
+              "url": "https://www.bezirk-schwaben.de/media/16780/2026-03-26_broschuere_bezirk_in_schwaben_web.pdf"
+            }
+          ],
+          "more_context": "Sailer also heads Augsburg district. His role here comes from a separate election to the regional assembly."
+        },
+        {
+          "id": "state",
+          "level": "Bavaria",
+          "institution": "Bavarian state parliament",
+          "representatives": "Andreas Jäckel and Leo Dietz · both CSU",
+          "connection": "Your neighbourhood determines which constituency you live in. Augsburg-Stadt-Ost (701) elected Andreas Jäckel. Augsburg-Stadt-West (702) elected Leo Dietz. Both vote on laws for all of Bavaria.",
+          "sources": [
+            {
+              "label": "State parliament: Andreas Jäckel",
+              "url": "https://www.bayern.landtag.de/abgeordnete/abgeordnete-von-a-z/profil/andreas-jaeckel/"
+            },
+            {
+              "label": "State parliament: Leo Dietz",
+              "url": "https://www.bayern.landtag.de/abgeordnete/abgeordnete-von-a-z/profil/leo-dietz/"
+            },
+            {
+              "label": "2023 Bavarian state election results",
+              "url": "https://www.landtagswahl2023.bayern.de/stimmkreisuebersicht.html"
+            },
+            {
+              "label": "Augsburg neighbourhoods by constituency",
+              "url": "https://www.gesetze-bayern.de/Content/Document/BayLWG-ANL_1?view=Print"
+            },
+            {
+              "label": "Find other members: select Swabia on the parliament map",
+              "url": "https://www.bayern.landtag.de/abgeordnetenkarte/"
+            }
+          ],
+          "more_context": "Voters also elected members through party lists covering the whole of Swabia. The state parliament’s map shows who they are."
+        },
+        {
+          "id": "federal",
+          "level": "Germany",
+          "institution": "German Bundestag",
+          "connection": "Augsburg-Stadt (251) had no directly elected MP in 2025. Volker Ullrich (CSU) got the most local candidate votes, but the CSU had too few party votes in Bavaria for that seat. Claudia Roth and Raimond Scheirich also ran here. Each entered the Bundestag through their party’s Bavarian list.",
+          "sources": [
+            {
+              "label": "Federal Returning Officer: constituency result (English)",
+              "url": "https://www.bundeswahlleiterin.de/en/bundestagswahlen/2025/ergebnisse/bund-99/land-9/wahlkreis-251.html",
+              "language": "en"
+            },
+            {
+              "label": "City of Augsburg: local votes for each candidate",
+              "url": "https://www.augsburg.de/fileadmin/user_upload/verwaltungswegweiser/buergeramt/wahlen/bundestagswahlen/ivu/2025/ergebnisse_der_bundestagswahl_2025.html"
+            },
+            {
+              "label": "Bundestag: Claudia Roth",
+              "url": "https://www.bundestag.de/abgeordnete/biografien/R/roth_claudia-1046858"
+            },
+            {
+              "label": "Bundestag: Raimond Scheirich",
+              "url": "https://www.bundestag.de/abgeordnete/biografien/S/scheirich_raimond-1047034"
+            },
+            {
+              "label": "Bavaria: members elected by constituency and by party list (English)",
+              "url": "https://www.bundeswahlleiterin.de/en/bundestagswahlen/2025/gewaehlte/bund-99/land-9.html",
+              "language": "en"
+            }
+          ],
+          "activities": [
+            {
+              "title": "Vote on childcare · 12 November 2026",
+              "text": "The Bundestag passed a bill to improve early learning in childcare centres. The voting record shows how each member voted. It gives no reasons for their votes.",
+              "sources": [
+                {
+                  "label": "Bundestag: result of the vote",
+                  "url": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=1038"
+                },
+                {
+                  "label": "How each member voted (XLSX)",
+                  "url": "https://www.bundestag.de/resource/blob/1233020/20261112_1.xlsx"
+                }
+              ],
+              "votes": [
+                {
+                  "name": "Claudia Roth",
+                  "vote": "No",
+                  "source_row": 544
+                },
+                {
+                  "name": "Raimond Scheirich",
+                  "vote": "Yes",
+                  "source_row": 325
+                }
+              ]
+            }
+          ],
+          "members": [
+            {
+              "name": "Claudia Roth",
+              "party": "Greens"
+            },
+            {
+              "name": "Raimond Scheirich",
+              "party": "AfD"
+            }
+          ]
+        },
+        {
+          "id": "europe",
+          "level": "EU",
+          "institution": "European Parliament",
+          "connection": "Augsburg has no separate seat in European elections. Residents vote for party lists. Markus Ferber was born in Augsburg and won a seat on the CSU’s Bavarian list in 2024.",
+          "sources": [
+            {
+              "label": "European Parliament: Markus Ferber",
+              "url": "https://www.europarl.europa.eu/meps/en/1917/MARKUS_FERBER/home",
+              "language": "en"
+            },
+            {
+              "label": "Find current MEPs elected in Germany (English)",
+              "url": "https://www.europarl.europa.eu/meps/en/search/advanced?countryCode=DE",
+              "language": "en"
+            },
+            {
+              "label": "All candidates elected in Germany in 2024 (English)",
+              "url": "https://www.bundeswahlleiterin.de/en/europawahlen/2024/gewaehlte/bund-99.html",
+              "language": "en"
+            },
+            {
+              "label": "European Parliament: Ferber’s local ties (PDF, p. 38)",
+              "url": "https://europanetzwerk.hessen.de/sites/europanetzwerk.hessen.de/files/2025-07/europaeisches_parlament_buergerhandbuch_10_wahlperiode-qa0124028den.pdf#page=38"
+            },
+            {
+              "label": "How European elections work in Germany (English)",
+              "url": "https://www.bundeswahlleiterin.de/en/europawahlen/2024/informationen-waehler/wahlsystem.html",
+              "language": "en"
+            }
+          ],
+          "more_context": "Ferber’s party is the CSU. In the European Parliament, he sits with the European People’s Party group (EPP).",
+          "scope": "Germany elects 96 MEPs through party lists. In Bavaria, residents choose a Bavarian or nationwide party list. The profile below features one MEP with local ties.",
+          "profile_label": "A locally connected MEP",
+          "activities": [
+            {
+              "title": "Parliament agrees changes to EU disaster-response rules",
+              "date": "2026-11-12",
+              "status": "Negotiating position",
+              "text": "The European Parliament agreed changes to proposed rules for disaster and health emergency support. It sent the file back for talks with the Council, where national governments are represented. Final EU rules still need agreement.",
+              "local_context": "Augsburg firefighters responded to 356 calls during the first days of the June 2024 floods. This EU vote does not assign money to projects in Augsburg.",
+              "sources": [
+                {
+                  "label": "European Parliament: decision and next steps (English)",
+                  "url": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025/0223(COD)",
+                  "language": "en"
+                },
+                {
+                  "label": "Parliament’s named vote (JSON)",
+                  "url": "https://data.europarl.europa.eu/api/v2/events/MTG-PL-2026-11-12-DEC-200101?format=application%2Fld%2Bjson",
+                  "language": "en"
+                },
+                {
+                  "label": "City of Augsburg: flood response in June 2024",
+                  "url": "https://www.augsburg.de/aktuelles-aus-der-stadt/detail/hochwasserschutz-in-augsburg"
+                }
+              ],
+              "vote_caption": "Vote on the draft legislative act",
+              "votes": [
+                {
+                  "name": "Markus Ferber",
+                  "vote": "Yes",
+                  "source_record": "MTG-PL-2026-11-12-DEC-200101",
+                  "voter_id": "1917"
+                }
+              ]
+            }
+          ],
+          "members": [
+            {
+              "name": "Markus Ferber",
+              "party": "CSU"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

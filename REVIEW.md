@@ -1,0 +1,78 @@
+# Review and known gaps
+
+**Snapshot date: 14 November 2026.** Two independent agent reviewers tested the first working German version and its revision. One checked sources and geography. The other tested comprehension, keyboard access and mobile layouts. A third agent checked additional parliamentary and election records. Residents did not take part in these tests.
+
+## What changed after the first review
+
+| Reader’s question | First working version | Revision and follow-up |
+| --- | --- | --- |
+| What happened, and who acted? | On first opening the site at 390 × 844 pixels, the reviewer could answer within ten seconds without scrolling. Mayor Michael Ammer had announced a discussion about solar installations for 17 November. The reviewer understood that construction had yet to be approved. | The headline now names Ammer. On the revised first screen the reviewer could see the action, its status, the meeting date and the source. |
+| Who represents my area? | On a phone, the link to representatives came after all the updates. Augsburg readers had no quick way to find out whether they lived in the eastern or western constituency. | A link on the first screen goes straight to the representatives. The city switcher is larger. The district picker gives the directly elected members of the Bavarian parliament and the Swabian Regional Assembly for each of Augsburg’s 42 city districts. The reviewer used it with a keyboard. With JavaScript off, the lists still showed all 24 eastern districts and all 18 western districts. |
+| Can I check the story? | An Augsburg story gave “town hall” as the location of a paper form. A Bobingen item implied readers could request minutes after a meeting. Two source links shared a label. | The Augsburg story now identifies the citizens’ information desk on Rathausplatz. A documented district decision replaced the minutes item. Each of the six updates has its own source link and labels the notice date. |
+| Is the geography right? | The prototype distinguished the two cities correctly. The link for the Swabian Regional Assembly election led to provisional results. | A final election record was added. Bobingen has separate entries for Landkreis Augsburg and Bezirk Schwaben. The independent city of Augsburg has no district council entry. All 42 city district assignments were checked against Annex 1 of the Bavarian State Electoral Act. |
+
+## Source checks
+
+The Bobingen agenda dated 11 November announces a future discussion. In Augsburg, the water permit published in the 13 November city gazette records a decision made on 4 November. The dates and status of each are given separately. [Bobingen agenda](https://www.stadt-bobingen.de/_Resources/Persistent/3/a/2/f/3a2fa985a454da5ac61719220e99b7d6868934a4/amtliche%20BA%2017.11.26.pdf) · [Augsburg city gazette, page 302](https://www.augsburg.de/fileadmin/user_upload/footer/amtsblatt/2026/Amtsblatt-2026-46_vom-13-11-2026_.pdf#page=4)
+
+The Bundestag’s 12 November roll call records **yes** for Hansjörg Durz (row 43), Raimond Scheirich (325) and Heike Heubach (395), and **no** for Claudia Roth (544). A council majority alone gives no evidence of an individual member’s vote. [Bundestag roll call, XLSX](https://www.bundestag.de/resource/blob/1233020/20261112_1.xlsx)
+
+For the Waldberg-Kreuzanger community hall, the joint motion names Carolina Trautner and requests €625,000. On 23 April 2026 the Bavarian parliament approved the budget with the committee’s changes. The final budget lists the Bobingen project. These records establish the budget provision. Payment remains unverified. [Joint motion, page 1](https://www.bayern.landtag.de/www/ElanTextAblage_WP19/Drucksachen/Basisdrucksachen/0000008500/0000008614.pdf#page=1) · [Committee recommendation, page 3](https://www.bayern.landtag.de/www/ElanTextAblage_WP19/Drucksachen/Folgedrucksachen/0000006500/0000006814.pdf#page=3) · [Plenary decision](https://www.bayern.landtag.de/www/ElanTextAblage_WP19/Drucksachen/Folgedrucksachen/0000008000/0000008350.pdf#page=1) · [Final budget, page 43](https://www.stmfh.bayern.de/haushalt/20262027/Epl08.pdf#page=43)
+
+For the Bischof-Ulrich-Realschule, Augsburg’s 3 November announcement confirms the council approved a grant of up to €2.375 million. The city’s meeting archive dates the session to 29 October. The council records site required a security check. The city gazettes dated 16 October to 13 November contained no matching school entry. The motion number, minutes, vote count and individual votes remain unverified. [City announcement](https://www.augsburg.de/bildung-wirtschaft/bildung/news/detail?cHash=7ab99de3119b2305a2ff887d6faf86ac&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=18908) · [Council meeting archive](https://www.augsburg.de/buergerservice-rathaus/stadtrat-und-verwaltung/stadtrat-live-stream-und-mediathek) · [City gazettes](https://www.augsburg.de/amtliche-bekanntmachungen/)
+
+## Browser and accessibility checks on the German version
+
+All six pages loaded in Chrome and WebKit under a repository-style path. Viewports ranged from 320 to 1440 CSS pixels. The tests covered switching cities, jumping to page sections, choosing and resetting a district, and browsing with JavaScript disabled. The pages made no external requests while rendering. Chrome keyboard tests covered the skip link, visible focus and navigation to a source. In the macOS WebKit environment, Option+Tab reached links that Tab initially skipped.
+
+After a text-wrapping fix, all six pages fit at 320 pixels with text doubled in size. Axe-core 4.14.0 initially flagged the accessible name of the map credit link. After correction, the checks at 320 and 1366 pixels reported zero violations and zero items requiring manual review for the rules tested. Automated checks cover only part of accessibility.
+
+At 320 × 568 pixels, the map credit initially overlapped the place description. Giving the credit its own line left 5.3 pixels of clearance on retest. In the A4 print layout, the Bavaria and Europe headings stayed on the same page as the associated names and explanations.
+
+Direct file opening also worked in WebKit with JavaScript disabled and every HTTP(S) request blocked. Its simulated offline switch refused even the initial local file, so the file-opening check blocked web requests instead; none were attempted.
+
+The saved SVG map markers fell inside the VG250 municipal polygons for Bobingen (09772125) and Augsburg (09761000). Chrome also navigated directly between local files with network access and JavaScript disabled. [Map credits and data licence](MAP-LICENSE.md)
+
+## English edition
+
+The six pages, district finder and accessibility labels use English. Official district names stay in German so residents can match the street directory. For the election results, constituencies and seats, we link to verified English pages from the Federal Returning Officer. Most municipal sources are in German.
+
+- **Ten-second reading.** A fresh reviewer, shown only the English phone screen, identified Mayor Ammer, the public meeting on 17 November at 5 pm and the fact that no building had been chosen. The original reader separately repeated the test after seeing the German version. At 320 × 568 the Bobingen lead and source fit without scrolling. Augsburg showed its permit decision, actor and the three streams before the fold; the inspection deadline and source required a short scroll. Both cities’ leads and sources fit at 360 × 640.
+- **Source accuracy.** A reviewer checked every English news item, along with the constituency and party-list connections. We changed “roofs” to “city buildings,” described the school money as a grant towards expansion and labelled two official announcements as reports on decisions. We confirmed the four English Yes/No entries against a fresh copy of the roll call.
+- **Finding a district.** Grouping the no-JavaScript fallback by East and West made it hard to find district 06. The revised table lists the districts from 01 to 42. At 320 pixels, a reviewer followed 06 and 12 straight to the correct representatives. The lookup and all 42 rows also worked with enlarged text.
+- **Interpreting a seat.** A reader checked the [official English result for Augsburg-Stadt](https://www.bundeswahlleiterin.de/en/bundestagswahlen/2025/ergebnisse/bund-99/land-9/wahlkreis-251.html) and explained the distinction: the CSU candidate came first locally, no constituency seat was awarded, and Roth and Scheirich entered on party lists. The reader correctly identified their childcare votes and distinguished them from the city’s cooling-water permit.
+- **Browser and keyboard checks.** Chrome and WebKit each loaded all six pages at seven viewport widths, with no runtime errors or external requests. Tests covered the city switch, keyboard focus, lookup, reset and no-JavaScript reference. Axe initially could not determine the map-credit contrast. Explicitly layering its opaque background above the map resolved the check: the 12 final desktop/phone combinations had zero violations and no incomplete rules. This does not establish full accessibility.
+- **Printing and calendar.** Each English overview fits on one A4 page. The Chrome print view includes all 42 Augsburg districts even when their on-screen list is closed. Both browsers downloaded the Bobingen calendar file with JavaScript off. Its start converts to 17 November at 17:00 in Europe/Berlin. The agenda gives no end time, and the file supplies none.
+- **Delivery.** We unpacked the ZIP, rebuilt its contents and verified that the published files matched. From a nested URL containing a space, both browsers opened Bobingen, switched to Augsburg, followed a story to its evidence and compared the same level in the other city. All asset requests stayed under that subpath.
+
+[Phone view](screenshots/bobingen-mobile.png) · [Desktop view](screenshots/augsburg-desktop.png) · [District lookup](screenshots/augsburg-district.png) · [Named votes](screenshots/augsburg-federal.png)
+
+## Further refinement on 14 November 2026
+
+Three independent agent reviewers checked the next working version. The source reviewers checked geography, electoral links and the new EU evidence. The reader reviewer opened the pages in Chrome, repeated the ten-second question and tested the revisions again.
+
+- **EU coverage.** Germany elects 96 MEPs through party lists. The page introduces Ferber as one locally connected member and links separately to the current delegation and the 2024 election results. The navigation now says “Germany” and “EU”.
+- **A recent EU action.** Both cities now show Parliament’s 12 November changes to proposed disaster-response rules. The status is “Negotiating position”. The text says final rules still need agreement and that this vote assigns no project money to either city. The local examples use a Bavarian water authority report for Bobingen and Augsburg’s own flood-response account for the independent city.
+- **A named EU vote.** Two reviewers independently retrieved the official decision and member identity. Ferber’s Yes belongs to the draft legislative act, decision 200101. Parliament’s separate referral for talks, decision 200102, was by show of hands. The interface attributes the referral to Parliament. [Exact evidence and ballot scope](data/EU-EVIDENCE.md)
+- **Ten-second reading.** The revised Bobingen first screen still identifies Mayor Michael Ammer calling the public solar-panel meeting. The Augsburg first screen identifies the environment office granting Everllence a cooling-water permit.
+- **Keyboard and longer visits.** The first review found the sidebar clipped three sides of the focus outline. Its focus ring now sits inside the link. Desktop navigation remains available as profiles scroll. The reviewer checked normal and doubled text at 1440 × 1000, 1366 × 768 and 1024 × 600. All level links remained reachable, Tab exited the sidebar, and mouse scrolling continued into the page at its boundary.
+- **Mobile and accessibility.** Six pages fit at 320 and 390 pixels with normal and doubled text. The vote column now stays unbroken. Axe reported zero violations and zero incomplete checks across six pages at 320 and 1366 pixels. Automated checks and agent reviews do not replace testing with residents or screen-reader users.
+- **Browser compatibility.** Chrome and WebKit each passed 42 layouts under a repository-style subpath, along with city switching, level navigation, district lookup and reset, and the JavaScript-free district table. The pages made only local asset requests and raised no runtime exceptions.
+- **Source links.** A check of 59 unique source URLs found a broken Bobingen public-offices link. It was replaced with the district’s driving licence office. Augsburg’s own office was also linked to substantiate the difference in responsibility. The district council portal timed out and the Swabian brochure server refused the download. The final election records remain linked.
+- **Repeatable vote verification.** The offline EU checker matches the ballot identifier, date, report, voting method, member identity, recorded vote and any intended-vote field. Altering the vote or member name caused it to fail. The four Bundestag vote entries also matched the original official workbook.
+
+## Coverage and test limits
+
+The snapshot is updated by hand. Profiles cover selected votes, speeches and interviews. The Bobingen city council and Augsburg district council directories can be temporarily unavailable. The March election returns show who was elected at that time. Later membership changes require a current roster or separate evidence.
+
+The Swabian regional assembly brochure could be read in the web reader, but a direct download failed during review. The site also links to the final election record issued by the Government of Swabia. The European Parliament blocked an automated request for a member profile. The Federal Returning Officer’s record provides additional evidence of the mandate.
+
+Mobile checks used phone-sized browser viewports. Neither edition was tested on a physical phone or with a person using a screen reader. A local repository-style path simulated GitHub Pages. No public deployment was verified. The exact README command was run from a newly extracted ZIP on port 8791. The server returned the English Bobingen homepage. Browser Back and Forward restored both city editions; after leaving and returning to the district finder, each browser restored the selected district and matching names.
+
+The [source-file fingerprints](data/record-versions.json) identify the exact downloaded editions of the Bobingen agenda, Augsburg gazette and Bundestag roll call. Each includes the official URL and the relevant page or rows.
+
+## Repeat the checks
+
+- From the project folder, run `python3 tools/check.py` for the internal checks.
+- To verify the four individual votes offline, download the Bundestag spreadsheet linked above. Run `python3 tools/check_votes.py PATH/TO/20261112_1.xlsx`. The script checks the file version, row numbers, full names and marked votes. A deliberately swapped row and an altered vote each caused the check to fail.
+- To run the browser checks in an environment with Node.js and Playwright, start the [local server](README.md#run-locally), then run `node qa/browser.cjs http://127.0.0.1:8791/`. A local URL with a repository subpath also works. Set `BROWSER_CHANNEL=chrome` to use an installed copy of Chrome. The published site runs independently of these testing tools.

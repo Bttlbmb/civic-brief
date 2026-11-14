@@ -1,0 +1,55 @@
+{
+  "checked_on": "2026-11-14",
+  "purpose": "Fingerprints identify the exact source files reviewed. A match identifies a file version, not endorsement by the issuing body.",
+  "records": [
+    {
+      "title": "Bobingen building committee agenda, 11 November 2026",
+      "url": "https://www.stadt-bobingen.de/_Resources/Persistent/3/a/2/f/3a2fa985a454da5ac61719220e99b7d6868934a4/amtliche%20BA%2017.11.26.pdf",
+      "locator": "Item 2, PDF page 1.",
+      "bytes": 11378,
+      "sha256": "133f1a4b637836590e63fa07edc0e41313e4da64a6765df003fa37fe621ad34d"
+    },
+    {
+      "title": "Augsburg city gazette, issue 46",
+      "url": "https://www.augsburg.de/fileadmin/user_upload/footer/amtsblatt/2026/Amtsblatt-2026-46_vom-13-11-2026_.pdf#page=4",
+      "locator": "Printed page 302, PDF page 4.",
+      "bytes": 234582,
+      "sha256": "0edbb0ee4da5e8f13ee671cc7c35b50a78ba09f937417dbfccf81cca71231b3e"
+    },
+    {
+      "title": "Bundestag roll call, sitting 108, ballot 1",
+      "url": "https://www.bundestag.de/resource/blob/1233020/20261112_1.xlsx",
+      "locator": "Named rows 43, 325, 395 and 544.",
+      "bytes": 48557,
+      "sha256": "9351756772b510ba4423328051fa66e1d5c44ebe9ae83e12a45da06b5c775c5f"
+    },
+    {
+      "title": "European Parliament procedure 2025/0223(COD)",
+      "url": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025/0223(COD)",
+      "locator": "Key events: 12 November 2026 decision and referral for interinstitutional negotiations.",
+      "bytes": 152912,
+      "sha256": "0389b0ad935908ab11f3014b169bb6f4696964614b9dd43080530ce894aad13e"
+    },
+    {
+      "title": "Water authority report on June 2024 flooding",
+      "url": "https://www.wwa-don.bayern.de/themen/hochwasser/hochwasserereignisse/doc/hochwasserbericht_2024.pdf",
+      "locator": "Printed page 17: Holzhausen basin and Bobingen.",
+      "bytes": 7262536,
+      "sha256": "c34016cf8ce49cd38614ea05bab0df8f27e1c44cab7bea59b6cf7fdb6672d2db"
+    },
+    {
+      "title": "European Parliament named draft-act ballot",
+      "url": "https://data.europarl.europa.eu/api/v2/events/MTG-PL-2026-11-12-DEC-200101?format=application%2Fld%2Bjson",
+      "locator": "Decision200101; had_voter_favor contains person/1917; separate referral is Decision200102.",
+      "bytes": 14618,
+      "sha256": "6a93610e719d96ad6033771b89b3662f893e93b41e21c330455757e40828c7ae"
+    },
+    {
+      "title": "European Parliament member identity for Markus Ferber",
+      "url": "https://data.europarl.europa.eu/api/v2/meps/1917?format=application%2Fld%2Bjson",
+      "locator": "Member1917; givenName Markus; familyName Ferber.",
+      "bytes": 47370,
+      "sha256": "f0834c5771115ee2ec882680a7487ff8f5ed9a1895bd3b1c44374d9dab984f67"
+    }
+  ]
+}
