@@ -1,33 +1,25 @@
-# Civic Brief · Bobingen and Augsburg
+# Civic Brief · Stratford-on-Avon
 
-[Open the prototype](https://bttlbmb.github.io/civic-brief/) · [Source repository](https://github.com/Bttlbmb/civic-brief)
+[Open the public site](https://bttlbmb.github.io/civic-brief/) · [Source repository](https://github.com/Bttlbmb/civic-brief)
 
-An English snapshot of local decisions and elected representatives. It opens on Bobingen, a city in Augsburg district. Switch to Augsburg for the independent city. Each story links to its source; each profile explains the local connection. Official neighbourhood names stay in German to match the city’s street directory.
+A static UK constituency MVP covering recent council decisions, Manuela Perteghella’s voting and parliamentary activity, verified media reporting, representation and practical contact routes.
 
-The Germany and EU sections include named votes from 12 November 2026. EU coverage explains the party-list system, features a locally connected MEP and links to the full German delegation. The disaster-response proposal remains under negotiation.
+**Content snapshot: 15 November 2026.** This is an independently curated prototype with linked evidence, not a council or Parliament service or a live feed.
 
-**Snapshot date: 14 November 2026.** [Bobingen on a phone](screenshots/bobingen-mobile.png) · [Augsburg on a desktop](screenshots/augsburg-desktop.png) · [Augsburg district lookup](screenshots/augsburg-district.png) · [Federal vote](screenshots/augsburg-federal.png) · [EU vote](screenshots/desktop/07-bobingen-eu.png)
+## Published build
 
-## Run locally
+GitHub Pages publishes `main:/docs`. The homepage leads with three confirmed decisions; consultations and pending decisions appear below. Representatives leads with MP activity. Service problems and contact actions have their own Who to contact page.
 
-From the folder containing this README, run one command with Python 3:
+The build contains eleven HTML pages and local assets. Open `docs/index.html` locally or serve the directory with Python:
 
 ```sh
 python3 -m http.server 8791 --bind 127.0.0.1 --directory docs
 ```
 
-Open [the local site](http://127.0.0.1:8791/). Press Ctrl+C to stop. If the port is in use, change 8791 in both the command and the address. You can also open `docs/index.html` directly. All pages work offline. Following an external source link requires an internet connection. There is no install step, backend, API key or live AI call.
+External evidence links require internet access. Portrait attribution and coverage limits are on the Sources & coverage page.
 
-## Publish on GitHub Pages
+## Updating
 
-1. Copy the contents of this folder to the **root** of a GitHub repository and push them to `main`. The homepage should be at `docs/index.html`.
-2. Open **Settings → Pages → Build and deployment**. Select **Deploy from a branch**, choose **main** and **/docs**, then select **Save**.
-3. Once deployment finishes, select **Visit site**. A project site normally uses `https://NAME.github.io/REPOSITORY/`. Internal links, images and scripts use relative paths so the site works under that repository path. [GitHub’s publishing instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+The current published UK snapshot is in `docs/`. Build and check the UK project, then copy its verified static output into this folder and push to `main`.
 
-## Update the snapshot
-
-Edit the date, stories, people and sources in `data/snapshot.json`. Augsburg’s district assignments are in `data/city-districts.json`. Run `python3 tools/render.py`, then `python3 tools/check.py`. Commit the generated pages in `docs/` with the data. The district picker uses `docs/assets/district.js`. All 42 assignments are also available without JavaScript.
-
-Check the official city and district notices weekly. Check agendas before meetings and approved minutes afterwards. For parliamentary stories, check the procedure stage and the named voting record separately. Keep at most three updates per homepage, and record the source publication date separately from the event date. Advance the snapshot date after checking all retained stories and profiles. This routine is manual.
-
-The snapshot covers selected representatives and activities. Council decisions are credited to the council. Individual votes come from official named records. The maps show simplified municipal boundaries. See the [review and known gaps](REVIEW.md), [EU evidence](data/EU-EVIDENCE.md) and [map credits](MAP-LICENSE.md).
+The earlier German prototype’s research and tools remain in the repository. Its former published pages are preserved in Git history.
